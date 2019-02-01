@@ -1,0 +1,20 @@
+@media (max-width: $screen-width-lg) {
+    .index {
+        .container-half__img {
+            display: none;
+        }
+
+        .container-half__bg {
+        	left: -15px;
+        }
+    }
+    .index-form-feedback.container-half {
+		max-width: none;
+    }
+}
+
+@media (max-width: $screen-width-md) {}
+
+@media (max-width: $screen-width-sm) {}
+
+@media (max-width: $screen-width-xs) {}

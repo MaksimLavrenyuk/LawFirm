@@ -1,0 +1,21 @@
+@media (max-width: $screen-width-lg) {
+    .card-news {
+
+        &__content {
+            height: 270px;
+        }
+
+    }
+}
+
+@media (max-width: $screen-width-xs) {
+	.card-news {
+		&__content {
+			height: auto;
+			padding: 1.5rem;
+		}
+		&__link {
+			font-size: 1rem;
+		}
+	}
+}

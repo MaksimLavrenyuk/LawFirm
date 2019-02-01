@@ -1,0 +1,28 @@
+@media (max-width: $screen-width-sm) {
+	.services-itm.h-170 {
+		height: auto;
+	}
+}
+
+@media (max-width: $screen-width-xs) {
+	.services-itm {
+		flex-direction: column;
+		align-items: center;
+		&__left {
+			padding-right: 0;
+		}
+		&__title {
+			font-size: 1.25rem;
+			text-align: center;
+			margin-top: 1rem;
+			&:after {
+				right: 0;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+		&__text {
+			text-align: center;
+		}
+	}
+}

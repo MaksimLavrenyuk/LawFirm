@@ -1,0 +1,13 @@
+.btn {
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 1;
+}
+.btn-primary {
+	color: white;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+	opacity: 1;
+}
+@import "btn-mediaqueries";

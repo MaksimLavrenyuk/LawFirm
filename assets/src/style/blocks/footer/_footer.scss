@@ -1,0 +1,40 @@
+.footer {
+	&__title {
+		position: relative;
+	    font-size: 1.5rem;
+	    margin-bottom: 1.45em;
+	    &:after {
+	    	position: absolute;
+		    content: " ";
+		    width: 2.5em;
+		    height: 2px;
+		    bottom: -0.725em;
+		    left: 0;
+		    background-color: $primary;
+	    }
+	}
+}
+
+.footer-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	&__itm {
+		margin-bottom: 0.75rem;
+	}
+	i {
+		width: 38px;
+		font-size: 1.125rem;
+	}
+}
+
+a.footer-list__text {
+	color: $body-color;
+	transition: $animation-time-sm;
+	&:hover,
+	&:focus {
+		color: white;
+	}
+}
+
+@import "footer-mediaqueries";

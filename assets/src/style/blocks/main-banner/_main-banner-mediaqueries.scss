@@ -1,0 +1,63 @@
+@media (max-width: $screen-width-md) {
+    .main-banner__content {
+        max-width: 550px;
+    }
+}
+
+@media (max-width: $screen-width-sm) {
+    .main-banner {
+        .slick-dots {
+            top: 85%;
+            transform: translate(-85%, 0);
+        }
+    }
+}
+
+@media (max-width: $screen-width-xs) {
+    .main-banner {
+        &__title {
+            font-size: 2rem;
+            margin-bottom: 1.75rem;
+            &:after {
+            	height: 2px;
+            	bottom: -1.75rem;
+            }
+        }
+
+        &__text {
+            font-size: 0.875rem;
+            padding-top: 1rem;
+            padding-bottom: 1.5rem;
+        }
+        &__content {
+        	margin-top: 12%;
+        }
+
+        .slick-dots {
+        	right: -25px;
+        	top: 82%;
+        	transform: translate(-82%,0);
+            li {
+                button {
+                    width: 35px;
+
+                    &:before {
+                        width: 35px;
+                    }
+
+                }
+
+                &.slick-active {
+
+                    button {
+                        width: 45px;
+
+                        &:before {
+                        	width: 45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

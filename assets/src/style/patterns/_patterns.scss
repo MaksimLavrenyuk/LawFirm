@@ -1,0 +1,48 @@
+.grey-pattern {
+	background-color: #f2f2f2;
+	background-image: url(../img/grey-pattern.png);
+}
+.dark-pattern {
+	position: relative;
+	* {
+		position: relative;
+		z-index: 1;
+	}
+    &:after {
+    	content: '';
+	    display: block;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+		background-color: #2b272c;
+	    background-image: url(../img/dark-pattern.png);
+	    opacity: 0.97;
+	    z-index: 0;
+    }
+    h1, h2, h3, h4, h5, h6 {
+    	color: white;
+    }
+}
+
+.yellow-pattern {
+	position: relative;
+	* {
+		position: relative;
+		z-index: 1;
+	}
+	&:after {
+    	content: '';
+	    display: block;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    opacity: 0.97;
+	    z-index: 0;
+	    background-color: #c8ac48;
+	    opacity: 0.93;
+    }
+}

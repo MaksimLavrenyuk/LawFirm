@@ -1,0 +1,54 @@
+.header {
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	background-image: none;
+	transition: $animation-time-sm;
+
+	.container {
+		padding: 1.25rem 15px;
+		border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+		transition: $animation-time-sm;
+	}
+
+	.nav-link {
+		color: white;
+		
+    	text-transform: uppercase;
+    	font-size: 0.875rem;
+    	font-weight: 700;
+    	padding: 1.875rem 0;
+    	transition: $animation-time-sm;
+    	&:hover, 
+    	&:focus {
+    		color: $primary;
+    	}
+	}
+	.nav-item {
+		margin-left: 0.875rem;
+		margin-right: 0.875rem;
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	.header-navbar {
+		justify-content: flex-end;
+	}
+	&_scroll {
+		background-image: url(../img/dark-pattern.png);
+		.container {
+			padding-top: 0.25rem;
+			padding-bottom: 0.25rem;
+			border-bottom-width: 0px;
+		}
+	}
+}
+
+.navbar-toggler-icon {
+	background-image: url(../img/burger.png);
+}
+
+@import "header-mediaqueries";

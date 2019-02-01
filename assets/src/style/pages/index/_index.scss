@@ -1,0 +1,57 @@
+.index-workers {
+
+}
+
+.index-workers-item {
+	position: relative;
+	padding-left: 15px;
+	padding-right: 15px;
+	&:hover,
+	&:focus {
+		.index-workers-item__content {
+			max-height: 100%;
+			padding: 2.25rem 1.875rem;
+		}
+		.index-workers-item__img {
+			opacity: $opacity-hover;
+		}
+	}
+	&__img {
+		transition: $animation-time-lg;
+	}
+	&__content {
+		width: calc(100% - 30px);
+		background-color: $secondary;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		text-align: center;
+		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-height: 90px;
+		justify-content: space-between;
+		transition: $animation-time-lg;
+	}
+	&__title {
+		font-family: $font-family-base;
+		color: white;
+		font-size: 0.875rem;
+		text-transform: uppercase;
+	}
+	&__position {
+		margin-bottom: 1rem;
+	}
+	&__info {
+		color: white;
+		margin-bottom: 1rem;
+		a {
+			color: white;
+		}
+	}
+}
+
+@import "index-mediaqueries";

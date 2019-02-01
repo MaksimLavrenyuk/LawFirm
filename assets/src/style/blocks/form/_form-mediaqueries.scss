@@ -1,0 +1,30 @@
+@media (max-width: $screen-width-lg) {
+	.form__part {
+		margin-right: -13px;
+	}
+}
+
+@media (max-width: $screen-width-xs) {
+	.form {
+		&__part {
+			flex-direction: column;
+			margin-left: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+		}
+
+		&__input {
+			width: 100%;
+			margin-left: 0px;
+			margin-right: 0px;
+			margin-bottom: 1rem;
+		}
+		.btn {
+			margin-top: 2rem;
+		}
+	}
+	.input-box {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}

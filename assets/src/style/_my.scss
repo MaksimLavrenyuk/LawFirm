@@ -1,0 +1,57 @@
+//ШРИФТЫ
+@import "fonts/fonts";
+
+
+//ИКОНКИ
+@import "icons/icons";
+
+
+//ОБЩИЕ СТИЛИ ВСЕХ СТРАНИЦ
+
+//типографика
+@import "typography/typography";
+//обычные стили страницы page, page-content и т.п.
+@import "common/page";
+
+//БЛОКИ 
+// главный банер
+@import "blocks/main-banner/main-banner";
+// хедер
+@import "blocks/header/header";
+// логотип
+@import "blocks/logo/logo";
+// кнопки
+@import "blocks/btn/btn";
+// половина контейнера
+@import "blocks/container-half/container-half";
+// секция
+@import "blocks/section/section";
+// автограф
+@import "blocks/autograph/autograph";
+// блок с услугами
+@import "blocks/services-itm/services-itm";
+//форма
+@import "blocks/form/form";
+// дата
+@import "blocks/date/date";
+// карточка новостей
+@import "blocks/card-news/card-news";
+//футер
+@import "blocks/footer/footer";
+// мобильное меню
+@import "blocks/mobile-menu/mobile-menu";
+
+
+
+//УТИЛИТЫ
+@import "utilities/utilities";
+
+//патерны
+@import "patterns/patterns";
+
+// анимации
+@import "animations/animations";
+
+//СТРАНИЦЫ
+
+@import "pages/index/index";

@@ -1,0 +1,50 @@
+.form {
+	&__part {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-left: -13px;
+		padding-right: -13px;
+		margin-bottom: 1.875rem;
+	}
+	&__input {
+    	color: #ffffff;
+	    background-color: transparent;
+	    border-radius: 0;
+	    border: 1px solid $primary;
+	    border-width: 2px;
+	    border-color: transparent;
+	    border-bottom-color: $primary;
+	    padding: 0.625rem 0.25rem;
+	    font-size: 1rem;
+	    display: block;
+    	width: 100%;
+    	outline: none;
+	    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	    transition: $animation-time-sm;
+		&.textarea {
+			resize: none;
+		}
+		&:focus {
+			border-color: $primary;
+			background-color: rgba(200, 172, 72, 0.1);
+		}
+		&:hover {
+			background-color: rgba(200, 172, 72, 0.1);
+		}
+	    &_width_50 {
+			width: 50%;
+	    }
+	}
+}
+
+.input-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+@import "form-mediaqueries";

@@ -1,0 +1,35 @@
+.container-half {
+	max-width: 585px;
+	width: 100%;
+	&_left {
+		margin-left: auto;
+	}
+	&_right {
+		margin-right: auto;
+	}
+	&__img {
+		position: relative;
+		z-index: 2;
+		line-height: 1;
+	}
+	&__bg {
+		position: absolute;
+		top: 0;
+	    left: 200px;
+	    height: 100%;
+	    width: calc(100vw / 2);
+	    text-align: left;
+	    background-size: cover;
+	    background-position: left center;
+	    z-index: 0;
+	    &:after {
+	    	content: "";
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+		    background-color: rgba(200, 172, 72, 0.85);
+	    }
+	}
+}
