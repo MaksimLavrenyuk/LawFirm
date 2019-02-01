@@ -1,0 +1,63 @@
+<div class="modal fade" id="modal-feedback" tabindex="-1" role="dialog" aria-labelledby="modal-feedbackLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal-feedbackLabel">Оставить сообщение</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="section__caption">Заполните форму и мы свяжемся с Вами в самое ближайшее время</p>
+                <form id="feedback-form" name="feedback" action="feedback.php" method="post" class="form">
+                    <div class="form__part">
+                        <div class="input-box input-box_50 w1">
+                            <label for="firstName" class="sr-only">
+                                Имя
+                                <span class="required">*</span>
+                            </label>
+                            <input id="name" name="firstName" type="text" class="form__input" placeholder="Имя *">
+                            <div class="error-box"></div>
+                        </div>
+                        <div class="input-box input-box_50">
+                            <label for="lastName" class="sr-only">
+                                Фамилия
+                                <span class="required">*</span>
+                            </label>
+                            <input name="lastName" type="text" class="form__input" placeholder="Фамилия">
+                            <div class="error-box"></div>
+                        </div>
+                    </div>
+                    <div class="form__part">
+                        <div class="input-box input-box_50 w1">
+                            <label for="email" class="sr-only">
+                                E-mail
+                                <span class="required">*</span>
+                            </label>
+                            <input id="email" name="email" type="email" class="form__input" placeholder="Ваш E-Mail">
+                            <div class="error-box"></div>
+                        </div>
+                        <div class="input-box input-box_50 w1">
+                            <label for="tel" class="sr-only">
+                                Телефон
+                                <span class="required">*</span>
+                            </label>
+                            <input id="tel" name="tel" type="tel" class="form__input" placeholder="Телефон *">
+                            <div class="error-box"></div>
+                        </div>
+                    </div>
+                    <div class="form__part">
+                        <div class="input-box input-box_100 msg">
+                            <label for="message" class="sr-only">
+                                Ваше сообщение
+                            </label>
+                            <textarea id="message" name="message" rows="5" class="textarea form__input" placeholder="Ваше сообщение"></textarea>
+                            <div class="error-box"></div>
+                        </div>
+                    </div>
+                    <button type="submit" id="send" class="btn btn-primary">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

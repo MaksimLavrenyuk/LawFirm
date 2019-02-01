@@ -18,4 +18,23 @@ h6 {
 
 }
 
+p, 
+a, 
+strong,
+em,
+span,
+input,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    &::selection {
+		background: $primary;
+		color: white;
+	}
+}
+
 @import "typography-mediaqueries";

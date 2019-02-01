@@ -27,6 +27,11 @@ $btn-padding-x:2.1875rem;
 // отступы в toogler хедера
 $navbar-toggler-padding-y: 0.25rem;
 $navbar-toggler-padding-x: 0.25rem;
+$breadcrumb-bg: transparent;
+$breadcrumb-active-color: white;
+$breadcrumb-padding-y: 0;
+$breadcrumb-padding-x: 0;
+$breadcrumb-item-padding: 1rem;
 
 // ПЕРЕОПРЕДЕЛЕНИЕ ДЕФОЛТНЫХ ЗНАЧЕНИЙ ПЕРЕМЕННЫХ SLICK-SLIDER 
 $slick-dot-color: #7e7d82;
@@ -100,4 +105,10 @@ $mobile-menu-nav-link-color: white;
 //цвет оверлея на body при открытия мобильного меню
 $mobile-menu-body-overlay: #212529;
 
+
+//модальное окно
+
+$modal-content-border-radius: 0;
+$modal-content-bg: tranparent;
+$modal-content-border-width: 0;
 

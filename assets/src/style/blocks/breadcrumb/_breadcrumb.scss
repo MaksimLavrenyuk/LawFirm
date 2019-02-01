@@ -1,0 +1,31 @@
+.breadcrumb-box {
+	text-align: center;
+	background-color: $primary;
+	padding: 1.5rem 0;
+	&__title {
+		font-size: 2.5rem;
+		color: white;
+		font-family: $font-family-secondary;
+	}
+}
+
+.breadcrumb {
+	justify-content: center;
+}
+
+.breadcrumb-item {
+	font-size: 1.25rem;
+	a {
+		color: black;
+		transition: $animation-time-sm;
+		&:hover,
+		&:focus {
+			color: white;
+			text-decoration: none;
+		}
+	}
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+	content: "";
+}

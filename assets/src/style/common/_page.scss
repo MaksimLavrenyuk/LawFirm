@@ -1,4 +1,8 @@
 .page {
 	overflow-x: hidden;
+	&_secondary {
+		padding-top: 125px;
+		background-image: url(../img/dark-pattern.png);
+	}
 }
 @import "page-mediaqueries";

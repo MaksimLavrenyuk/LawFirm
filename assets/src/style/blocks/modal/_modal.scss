@@ -1,0 +1,20 @@
+.modal-content {
+	background-image: url(../img/dark-pattern.png);
+}
+.modal-title {
+	font-size: 1.5rem;
+	color: $primary;
+}
+
+.modal-body {
+	.section__caption{
+		color: $primary;
+		font-size: 1rem;
+	}
+}
+
+.modal-header {
+	.close {
+		color: $primary;
+	}
+}
