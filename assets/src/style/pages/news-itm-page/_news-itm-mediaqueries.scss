@@ -1,0 +1,12 @@
+@media (max-width: $screen-width-xs) {
+    .news-itm {
+
+        &__content {
+            padding: 1rem;
+        }
+        &__title {
+            font-size: 1.25rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+}

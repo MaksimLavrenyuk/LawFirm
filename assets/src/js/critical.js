@@ -6,3 +6,6 @@
 
 // Импортируем wow
 //= ../../../node_modules/wow.js/dist/wow.min.js
+
+// Импортируем ленивую загрузку
+//= ../../../node_modules/lazyloadxt/dist/jquery.lazyloadxt.min.js

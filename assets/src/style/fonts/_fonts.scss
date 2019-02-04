@@ -1,5 +1,6 @@
 @font-face {
     font-family: 'Muli';
+    font-display: swap;
     src: local('Muli Light'), local('Muli-Light'), 
         url('../fonts/muli/Mulilight.woff2') format('woff2'),
         url('../fonts/muli/Mulilight.woff') format('woff'), 
@@ -10,6 +11,7 @@
 
 @font-face {
     font-family: 'Muli';
+    font-display: swap;
     src: local('Muli Regular'), local('Muli-Regular'), 
         url('../fonts/muli/Muliregular.woff2') format('woff2'),
         url('../fonts/muli/Muliregular.woff') format('woff'),
@@ -20,6 +22,7 @@
 
 @font-face {
     font-family: 'Muli';
+    font-display: swap;
     src: local('Muli SemiBold'), local('Muli-SemiBold'),
         url('../fonts/muli/Mulisemibold.woff2') format('woff2'), 
         url('../fonts/muli/Mulisemibold.woff') format('woff'),
@@ -30,6 +33,7 @@
 
 @font-face {
     font-family: 'Muli';
+    font-display: swap;
     src: local('Muli Italic'), local('Muli-Italic'),
         url('../fonts/muli/Muliitalic.woff2') format('woff2'),
         url('../fonts/muli/Muliitalic.woff') format('woff'),
@@ -40,6 +44,7 @@
 
 @font-face {
     font-family: 'Muli';
+    font-display: swap;
     src: local('Muli ExtraLight Italic'), local('Muli-ExtraLightItalic'), 
         url('../fonts/muli/Muliextralightitalic.woff2') format('woff2'), 
         url('../fonts/muli/Muliextralightitalic.woff') format('woff'), 
@@ -50,6 +55,7 @@
 
 @font-face {
     font-family: 'Muli';
+    font-display: swap;
     src: local('Muli ExtraBold Italic'), local('Muli-ExtraBoldItalic'), 
         url('../fonts/muli/Muliextrabolditalic.woff2') format('woff2'),
         url('../fonts/muli/Muliextrabolditalic.woff') format('woff'),
@@ -60,6 +66,7 @@
 
 @font-face {
     font-family: 'Muli';
+    font-display: swap;
     src: local('Muli ExtraBold'), local('Muli-ExtraBold'),
         url('../fonts/muli/Muliextrabold.woff2') format('woff2'),
         url('../fonts/muli/Muliextrabold.woff') format('woff'),
@@ -70,6 +77,7 @@
 
 @font-face {
     font-family: 'Muli';
+    font-display: swap;
     src: local('Muli Light Italic'), local('Muli-LightItalic'),
         url('../fonts/muli/Mulilightitalic.woff2') format('woff2'), 
         url('../fonts/muli/Mulilightitalic.woff') format('woff'),
@@ -80,6 +88,7 @@
 
 @font-face {
     font-family: 'Muli';
+    font-display: swap;
     src: local('Muli Black'), local('Muli-Black'), 
         url('../fonts/muli/Muliblack.woff2') format('woff2'),
         url('../fonts/muli/Muliblack.woff') format('woff'), 
@@ -90,6 +99,7 @@
 
 @font-face {
     font-family: 'Muli';
+    font-display: swap;
     src: local('Muli ExtraLight'), local('Muli-ExtraLight'),
         url('../fonts/muli/Muliextralight.woff2') format('woff2'),
         url('../fonts/muli/Muliextralight.woff') format('woff'), 
@@ -100,6 +110,7 @@
 
 @font-face {
     font-family: 'Muli';
+    font-display: swap;
     src: local('Muli Bold Italic'), local('Muli-BoldItalic'), 
         url('../fonts/muli/Mulibolditalic.woff2') format('woff2'),
         url('../fonts/muli/Mulibolditalic.woff') format('woff'), 
@@ -110,6 +121,7 @@
 
 @font-face {
     font-family: 'Muli';
+    font-display: swap;
     src: local('Muli SemiBold Italic'), local('Muli-SemiBoldItalic'),
         url('../fonts/muli/Mulisemibolditalic.woff2') format('woff2'), 
         url('../fonts/muli/Mulisemibolditalic.woff') format('woff'), 
@@ -120,6 +132,7 @@
 
 @font-face {
     font-family: 'Muli';
+    font-display: swap;
     src: local('Muli Bold'), local('Muli-Bold'),
         url('../fonts/muli/Mulibold.woff2') format('woff2'), 
         url('../fonts/muli/Mulibold.woff') format('woff'),
@@ -130,6 +143,7 @@
 
 @font-face {
     font-family: 'Muli';
+    font-display: swap;
     src: local('Muli Black Italic'), local('Muli-BlackItalic'),
         url('../fonts/muli/Muliblackitalic.woff2') format('woff2'), 
         url('../fonts/muli/Muliblackitalic.woff') format('woff'),
@@ -140,6 +154,7 @@
 
 @font-face {
     font-family: 'Playfair Display';
+    font-display: swap;
     src: local('Playfair Display'), local('PlayfairDisplay-Regular'), 
         url('../fonts/playfair/playfairdisplay.woff2') format('woff2'), 
         url('../fonts/playfair/playfairdisplay.woff') format('woff'), 
@@ -149,6 +164,7 @@
 }
 @font-face {
     font-family: 'Playfair Display';
+    font-display: swap;
     src: local('Playfair Display Italic'), local('PlayfairDisplay-Italic'), 
         url('../fonts/playfair/playfairdisplayitalic.woff2') format('woff2'), 
         url('../fonts/playfair/playfairdisplayitalic.woff') format('woff'), 
@@ -158,6 +174,7 @@
 }
 @font-face {
     font-family: 'Playfair Display';
+    font-display: swap;
     src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'), 
         url('../fonts/playfair/playfairdisplaybold.woff2') format('woff2'), 
         url('../fonts/playfair/playfairdisplaybold.woff') format('woff'), 
@@ -167,6 +184,7 @@
 }
 @font-face {
     font-family: 'Playfair Display';
+    font-display: swap;
     src: local('Playfair Display Bold Italic'), local('PlayfairDisplay-BoldItalic'), 
         url('../fonts/playfair/playfairdisplaybolditalic.woff2') format('woff2'), 
         url('../fonts/playfair/playfairdisplaybolditalic.woff') format('woff'), 
@@ -176,6 +194,7 @@
 }
 @font-face {
     font-family: 'Playfair Display';
+    font-display: swap;
     src: local('Playfair Display Black'), local('PlayfairDisplay-Black'), 
         url('../fonts/playfair/playfairdisplayblack.woff2') format('woff2'), 
         url('../fonts/playfair/playfairdisplayblack.woff') format('woff'), 
@@ -185,6 +204,7 @@
 }
 @font-face {
     font-family: 'Playfair Display';
+    font-display: swap;
     src: local('Playfair Display Black Italic'), local('PlayfairDisplay-BlackItalic'), 
         url('../fonts/playfair/playfairdisplayblackitalic.woff2') format('woff2'), 
         url('../fonts/playfair/playfairdisplayblackitalic.woff') format('woff'), 

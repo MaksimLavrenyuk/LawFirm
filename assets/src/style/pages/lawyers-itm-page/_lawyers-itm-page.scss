@@ -1,0 +1,47 @@
+.lawyers-itm-page {
+
+}
+
+.lawyers-itm-page-img {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__content {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		background-color: #2b272c;
+	    background-image: url(../img/dark-pattern.png);
+	    text-align: center;
+	    padding: 0.5rem;
+	}
+	&__title {
+		font-family: $font-family-base;
+		color: white;
+		text-transform: uppercase;
+		padding: 0 0.5rem;
+	}
+	&__caption {
+		padding: 0 0.5rem;
+		color: $primary;
+	}
+}
+
+.lawyers-itm-page-contacts {
+	padding: 1.5rem 2.25rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border-top: 10px solid $primary;
+	list-style: none;
+	background-color: #2b272c;
+	background-image: url(../img/dark-pattern.png);
+	font-family: $font-family-secondary;
+	&__itm {
+		font-size: 1.5rem;
+		color: $primary;
+		margin-bottom: 0.5rem;
+	}
+}
+
+@import "lawyers-itm-page-mediaqueries";

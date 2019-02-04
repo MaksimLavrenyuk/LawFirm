@@ -15,26 +15,5 @@
 	}
 }
 
-.footer-list {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	&__itm {
-		margin-bottom: 0.75rem;
-	}
-	i {
-		width: 38px;
-		font-size: 1.125rem;
-	}
-}
-
-a.footer-list__text {
-	color: $body-color;
-	transition: $animation-time-sm;
-	&:hover,
-	&:focus {
-		color: white;
-	}
-}
 
 @import "footer-mediaqueries";

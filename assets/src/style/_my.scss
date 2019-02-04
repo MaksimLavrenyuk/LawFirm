@@ -44,7 +44,10 @@
 @import "blocks/modal/modal";
 // хлебные крошки
 @import "blocks/breadcrumb/breadcrumb";
-
+// список контактов
+@import "blocks/contact-list/contact-list";
+//карта
+@import "blocks/map/map";
 
 
 //УТИЛИТЫ
@@ -59,3 +62,6 @@
 //СТРАНИЦЫ
 
 @import "pages/index/index";
+@import "pages/services-page/services-page";
+@import "pages/lawyers-itm-page/lawyers-itm-page";
+@import "pages/news-itm-page/news-itm-page";

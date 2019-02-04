@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/critical.js"></script>
+</head>
+
+<body>
+    <!--Импортируем header для вторичных страниц-->
+    //= template/header/header-secondary-page.html
+    <!--/Импортируем header  для вторичных страниц-->
+    <!--Для вторичных страниц добавляем класс к page-->
+    <div class="page page_secondary">
+        <div class="breadcrumb-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <span class="breadcrumb-box__title">Контакты</span>
+                        <nav aria-label="breadcrumb">
+                          <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+                          </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="feedbackBox" class="grey-pattern section pt-60 pb-65">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-12  wow zoomIn">
+                        <h2 class="section__title highlight">Форма обратной связи</h2>
+                        <form id="feedback-form" name="feedback" action="feedback.php" method="post" class="form">
+                            <div class="form__part">
+                                <div class="input-box input-box_50 w1">
+                                    <label for="firstName" class="sr-only">
+                                        Имя
+                                        <span class="required">*</span>
+                                    </label>
+                                    <input id="name" name="firstName" type="text" class="form__input form__input_black" placeholder="Имя *">
+                                    <div class="error-box"></div>
+                                </div>
+                                <div class="input-box input-box_50">
+                                    <label for="lastName" class="sr-only">
+                                        Фамилия
+                                        <span class="required">*</span>
+                                    </label>
+                                    <input name="lastName" type="text" class="form__input form__input_black" placeholder="Фамилия">
+                                    <div class="error-box"></div>
+                                </div>
+                            </div>
+                            <div class="form__part">
+                                <div class="input-box input-box_50 w1">
+                                    <label for="email" class="sr-only">
+                                        E-mail
+                                        <span class="required">*</span>
+                                    </label>
+                                    <input id="email" name="email" type="email" class="form__input form__input_black" placeholder="Ваш E-Mail">
+                                    <div class="error-box"></div>
+                                </div>
+                                <div class="input-box input-box_50 w1">
+                                    <label for="tel" class="sr-only">
+                                        Телефон
+                                        <span class="required">*</span>
+                                    </label>
+                                    <input id="tel" name="tel" type="tel" class="form__input form__input_black" placeholder="Телефон *">
+                                    <div class="error-box"></div>
+                                </div>
+                            </div>
+                            <div class="form__part">
+                                <div class="input-box input-box_100 msg">
+                                    <label for="message" class="sr-only">
+                                        Ваше сообщение
+                                    </label>
+                                    <textarea id="message" name="message" rows="5" class="textarea form__input form__input_black" placeholder="Ваше сообщение"></textarea>
+                                    <div class="error-box"></div>
+                                </div>
+                            </div>
+                            <button type="submit" id="send" class="btn btn-primary">Отправить сообщение</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5 col-12  wow zoomIn">
+                        <ul class="contact-list mt-5 mt-md-0">
+                            <li class="contact-list__itm">
+                                <i class="fa fa-map-marker highlight"></i><span class="contact-list__text">Москва, ул. Пушечная, 6</span>
+                            </li>
+                            <li class="contact-list__itm">
+                                <i class="fa fa-envelope highlight"></i><a href="mailto:LawFirm@mail.ru" class="contact-list__text">LawFirm@mail.ru</a>
+                            </li>
+                            <li class="contact-list__itm">
+                                <i class="fa fa-phone highlight"></i><a href="tel:88005000000" class="contact-list__text">8 800 500 0000</a>
+                            </li>
+                            <li class="contact-list__itm">
+                                <i class="fa fa-clock-o highlight"></i><a href="tel:88005000000" class="contact-list__text">24 часа в сутки, 7 дней в неделю</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            <div>
+        </section>
+        <section id="map" class="map map_fluid"></section>
+    </div>
+    <!--Импортируем футер-->
+    //= template/footer/footer.html
+    <!--/Импортируем футер-->
+    <script src="js/main.js" async></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=53a1f5cd-31bc-4c83-a962-e19bdab71f83" type="text/javascript"></script>
+    </script>
+    <script type="text/javascript">
+         new WOW().init();
+         var MapObjectName = [
+            'Юридическая фирма',
+            'Юридическая фирма 2 офис'
+        ];
+        var MapObjectCoordinate = [
+            [55.760545, 37.623268],
+            [55.738025, 37.587139]
+        ];
+        var MapObjectDescription = [
+            'Россия, Москва, Пушечная улица, 6',
+            'Россия, Москва, Пушечная улица, 10'
+        ];
+        $( window ).on( "load", function() {
+            ymaps.ready(init);
+
+            function init() {
+                myMap = new ymaps.Map('map', {
+                    center: MapObjectCoordinate[0],
+                    controls: ['zoomControl'],
+                    zoom: 13
+                }),
+                visible = new ymaps.GeoObjectCollection(),
+                group = new ymaps.GeoObjectCollection({
+                    properties: {
+                        id: 'group',
+                        name: 'Офисы'
+                    }
+                }, {
+                        // Опции.
+                        // Иконка метки будет растягиваться под размер ее содержимого.
+                        preset: 'islands#yellowIcon',
+                });
+                for (var i = 0; i <= MapObjectName.length; i++) {
+                    group.add(new ymaps.Placemark(MapObjectCoordinate[i], { 
+                        balloonContent: MapObjectDescription[i], 
+                        hintContent: MapObjectName[i], 
+                        iconCaption: MapObjectName[i]
+                    }));
+                };
+                
+                visible.add(group);
+                myMap.geoObjects.add(visible);
+                myMap.behaviors.disable('scrollZoom'); 
+                myMap.setBounds(myMap.geoObjects.getBounds());
+            };
+        });
+
+    </script>
+</body>
+
+</html>

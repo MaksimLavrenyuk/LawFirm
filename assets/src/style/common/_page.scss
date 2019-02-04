@@ -5,4 +5,9 @@
 		background-image: url(../img/dark-pattern.png);
 	}
 }
+.slick-list {
+    .slick-loading & {
+        background: #fff  center center no-repeat;
+    }
+}
 @import "page-mediaqueries";

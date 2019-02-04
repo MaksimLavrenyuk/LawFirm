@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Новости</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/critical.js"></script>
+</head>
+
+<body>
+    <!--Импортируем header для вторичных страниц-->
+    //= template/header/header-secondary-page.html
+    <!--/Импортируем header  для вторичных страниц-->
+    <!--Для вторичных страниц добавляем класс к page-->
+    <div class="page page_secondary">
+        <div class="breadcrumb-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <span class="breadcrumb-box__title">Новости</span>
+                        <nav aria-label="breadcrumb">
+                          <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Новости</li>
+                          </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="section grey-pattern">
+            <div class="container pt-60 pb-65">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-5">
+                        <!--Импортируем футер-->
+                        //= template/card-news/card-news.html
+                        <!--/Импортируем футер-->
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-5">
+                        <!--Импортируем футер-->
+                        //= template/card-news/card-news.html
+                        <!--/Импортируем футер-->
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-5">
+                        <!--Импортируем футер-->
+                        //= template/card-news/card-news.html
+                        <!--/Импортируем футер-->
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-5">
+                        <!--Импортируем футер-->
+                        //= template/card-news/card-news.html
+                        <!--/Импортируем футер-->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--Импортируем футер-->
+    //= template/footer/footer.html
+    <!--/Импортируем футер-->
+    <script src="js/main.js" async></script>
+</body>
+
+</html>

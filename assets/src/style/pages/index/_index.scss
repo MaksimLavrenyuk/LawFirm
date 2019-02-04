@@ -6,6 +6,10 @@
 	position: relative;
 	padding-left: 15px;
 	padding-right: 15px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	&:hover,
 	&:focus {
 		.index-workers-item__content {
@@ -50,6 +54,14 @@
 		margin-bottom: 1rem;
 		a {
 			color: white;
+		}
+	}
+	&_slider_not {
+		padding-left: 0;
+		padding-right: 0;
+		margin-bottom: 4rem;
+		.index-workers-item__content {
+			width: 100%;
 		}
 	}
 }

@@ -1,0 +1,9 @@
+@media (max-width: $screen-width-xs) {
+	.lawyers-itm-page-contacts {
+		padding: 1rem;
+		border-width: 5px;
+		&__itm {
+			font-size: 1rem;
+		}
+	}
+}

@@ -1,0 +1,13 @@
+@media (max-width: $screen-width-xs) {
+    .breadcrumb-box {
+        padding: 1rem 0;
+
+        &__title {
+            font-size: 1.5rem;
+        }
+    }
+
+    .breadcrumb-item {
+        font-size: 0.875rem;
+    }
+}
