@@ -22,6 +22,10 @@
 	    background-size: cover;
 	    background-position: left center;
 	    z-index: 0;
+	    & > * {
+	    	position: relative;
+	    	z-index: 1;
+	    }
 	    &:after {
 	    	content: "";
 		    position: absolute;

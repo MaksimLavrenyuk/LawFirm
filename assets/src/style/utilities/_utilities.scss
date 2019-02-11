@@ -32,3 +32,9 @@
 .highlight {
 	color: $primary !important;
 }
+
+@media (max-width: $screen-width-md) {
+	.mw-md-100 {
+		max-width: 100%;
+	}
+}
