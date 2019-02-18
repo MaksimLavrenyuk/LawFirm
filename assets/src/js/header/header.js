@@ -9,8 +9,4 @@ $(document).ready(function() {
             HeaderHeight = $('#header').innerHeight();
         }
     });
-    $('#btnScroll').click( function(){ 
-        $('html, body').animate({ scrollTop: $('#feedbackBox').offset().top - HeaderHeight }, 500);
-            return false; 
-    });
 });
