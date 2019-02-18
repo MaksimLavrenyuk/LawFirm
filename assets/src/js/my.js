@@ -1,11 +1,10 @@
 $(document).ready(function() {
     $('[type="tel"]').mask("+7 (999) 999-99-99");
-    scrollOnClick();
 
 });
-
+ scrollOnClick();
 function scrollOnClick() {
-	var indentHeight;
+	var indentHeight =$('#header').innerHeight();
 	$(window).scroll(function () {
 	  if ($(this).scrollTop() > 0) {
 	    indentHeight = $('#header').innerHeight();
@@ -14,7 +13,6 @@ function scrollOnClick() {
 	  }
 	});
 	$('.btn-scroll').click( function(e){ 
-		var HeaderHeight;
 		e.preventDefault();
 		var target = this.hash,
 		$target = $(target);
