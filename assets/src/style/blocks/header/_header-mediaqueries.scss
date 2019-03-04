@@ -1,3 +1,8 @@
+@media (max-width: $screen-width-lg) {
+	.header__second {
+		display: none;
+	}
+}
 @media (max-width: $screen-width-xs) {
 	.header {
 		.container {

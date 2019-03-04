@@ -15,6 +15,7 @@ $(document).ready(function() {
 	 		$('#mobile-menu').addClass('open');
 	 		$('.navbar-toggler').addClass('open');
 	    	transferNavInMobile();
+	    	transferHeaderSecondInMobile()
  			createBodyOverlay();
 		};
 
@@ -23,6 +24,7 @@ $(document).ready(function() {
 	 		$('#mobile-menu').removeClass('open');
 	 		$('.navbar-toggler').removeClass('open');
 	    	transferNavFromMobile();
+	    	transferHeaderSecondOutMobile()
 	    	removeBodyOverlay();
 		};
 
@@ -31,9 +33,19 @@ $(document).ready(function() {
 			$('#mobile-menu-nav').append(mainNav);
 		};
 
+		function transferHeaderSecondInMobile() {
+			var headerSecondChildren = $('#header-second').children();
+			$('#mobile-menu__second').append(headerSecondChildren);
+		};
+
 		function transferNavFromMobile() {
 			var mainNav = $('#main-nav');
 			$('#navbarNavDropdown').append(mainNav);
+		};
+
+		function transferHeaderSecondOutMobile() {
+			var headerSecondChildren = $('#mobile-menu__second').children();
+			$('#header-second').append(headerSecondChildren);
 		};
 
 		function createBodyOverlay() {

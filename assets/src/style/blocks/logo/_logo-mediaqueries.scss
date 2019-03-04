@@ -1,13 +1,17 @@
 @media (max-width: $screen-width-xs) {
 	.logo {
 		&__title {
-			font-size: 1.5rem;
+			font-size: 1.25rem;
 		}
 		&__sub {
 			font-size: 0.4375rem;
 		}
 		&__text {
-			margin-left: 0.75rem;
+			margin-right: 0.75rem;
+		}
+		&__img {
+			width: 36px;
+			height: 36px;
 		}
 	}
 }

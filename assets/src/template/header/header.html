@@ -4,11 +4,11 @@
             <div class="col-lg-4 col-md-5 col-sm-7 col-9">
                 <div class="heder-container-xs" id="nav-toggler-container-xs">
                     <a href="/" class="logo">
-                        <img src="img/logo.png" alt="Law Firm" class="logo__img img-fluid">
                         <div class="logo__text">
-                            <span class="logo__title">Law Firm</span>
+                            <span class="logo__title">Правозащитник</span>
                             <span class="logo__sub">Опыт. Честность. Эффективность</span>
                         </div>
+                        <img src="img/logo.png" alt="Law Firm" class="logo__img img-fluid">
                     </a>
                 </div>
             </div>
@@ -27,10 +27,15 @@
                                     <a class="nav-link" href="#">О компании</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Наши юристы</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Наши услуги</a>
+                                    <div class="dropdown">
+                                      <button class="btn btn-nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                       Наши услуги
+                                      </button>
+                                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Частным лицам</a>
+                                        <a class="dropdown-item" href="#">Бизнесу</a>
+                                      </div>
+                                    </div>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Новости</a>
@@ -44,6 +49,14 @@
                 </nav>
             </div>
         </div>
+        <div class="row justify-content-end">
+            <div class="col-xl-5">
+                <div id="header-second" class="header__second">
+                    <span class="header__subcaption">Ясна право</span>
+                    <a href="+74912511115" class="header__tel">+7-(4912)-51-11-15</a>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
 <div id="mobile-menu" class="mobile-menu">
@@ -51,6 +64,9 @@
         <button class="navbar-toggler" type="button">
             <span class="navbar-toggler-icon navbar-toggler-icon_white"></span>
         </button>
+        <div id="mobile-menu__second" class="mobile-menu__second">
+            
+        </div>
     </div>
     <div id="mobile-menu-nav" class="mobile-menu-nav">
     </div>

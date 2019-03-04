@@ -14,6 +14,31 @@
     &.open {
         right: 0;
     }
+    &__second {
+        .header__subcaption {
+            display: none;
+        }
+    }
+
+    .btn-nav-link {
+        width: 100%;
+        text-align: right;
+        padding: 1rem 1rem;
+        border-bottom: 1px solid #000;
+        color: white;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 0.875rem;
+        line-height: 1.6875;
+        transition: $animation-time-sm;
+        &:hover, 
+        &:focus {
+            color: $primary;
+        }
+    }
+    .dropdown-item {
+        text-align: right;
+    }
 }
 
 .body_menu-open {
@@ -22,10 +47,16 @@
 
 .mobile-menu-header {
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     padding: $mobile-menu-header-padding-y $mobile-menu-header-padding-x 0.875rem $mobile-menu-header-padding-x;
     justify-content: flex-end;
     background-color: $mobile-menu-header-bg-color;
     border-bottom: 1px solid $mobile-menu-nav-link-border-color;
+    .header__tel {
+        margin-top: 0.5rem;
+        display: inline-block;
+    }
 
 }
 

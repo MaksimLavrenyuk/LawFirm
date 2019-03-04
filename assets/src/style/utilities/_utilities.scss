@@ -13,6 +13,10 @@
 	padding-bottom: 4.0625rem !important;
 }
 
+.pb-110 {
+	padding-bottom: 6.875rem !important;
+}
+
 .mt-30 {
 	margin-top: 1.875rem !important;
 }
@@ -33,8 +37,50 @@
 	color: $primary !important;
 }
 
+.logo-bg {
+	position: relative;
+	&  * {
+		z-index: 2;
+	}
+	&:after {
+		position: absolute;
+		z-index: 1;
+		top: 50%; left: 50%;
+        transform: translate(-50%,-50%);
+		display: block;
+		content: " ";
+		height: 100%;
+		width: 100%;
+		background-image: url(../img/logo-bg.png);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		filter: blur(4px);
+		overflow: hidden;
+	}
+	&_left {
+		&:after {
+			left: 20%;
+			height: 100%;
+			width: 40%;
+		}
+	}
+}
+
+@media (max-width: $screen-width-lg) {
+	
+}
 @media (max-width: $screen-width-md) {
 	.mw-md-100 {
 		max-width: 100%;
+	}
+	
+}
+
+@media (max-width: $screen-width-xs) {
+	.logo-bg {
+		&:after {
+			display: none;
+		}
 	}
 }
