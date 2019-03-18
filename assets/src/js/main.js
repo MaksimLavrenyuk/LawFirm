@@ -1,6 +1,6 @@
 //ПЛАГИНЫ
 
-
+//= ../../../node_modules/popper.js/dist/umd/popper.js
 // Импортируем необходимые js-файлы Bootstrap 4
 
 //= ../../../node_modules/bootstrap/js/dist/util.js
@@ -8,6 +8,8 @@
 //= ../../../node_modules/bootstrap/js/dist/modal.js
 // Выпадающее меню
 //= ../../../node_modules/bootstrap/js/dist/dropdown.js
+// Коллапс
+//= ../../../node_modules/bootstrap/js/dist/collapse.js
 
 
 // Импортируем телефонную валидацию

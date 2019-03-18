@@ -60,15 +60,62 @@
 
 }
 
-.mobile-menu-nav .nav-link {
+.mobile-menu__nav .nav-link, .btn-link {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: normal;
+    text-transform: none;
     text-align: right;
     padding: $mobile-menu-nav-link-padding-y $mobile-menu-nav-link-padding-x;
     border-bottom: 1px solid $mobile-menu-nav-link-border-color;
 }
 
-.mobile-menu-nav .nav-link {
+
+.mobile-menu__nav .nav-link, .btn-link {
     color: $mobile-menu-nav-link-color;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color:  $link-hover-color;
+    }
 }
+
+.mobile-menu__nav .btn-link {
+    position: relative;
+    &:after {
+        display: inline-block;
+        margin-left: .255em;
+        vertical-align: .255em;
+        content: "";
+        border-top: .3em solid;
+        border-right: .3em solid transparent;
+        border-bottom: 0;
+        border-left: .3em solid transparent;
+        transform: rotate(180deg);
+        transition: 0.3s;
+    }
+}
+
+.mobile-menu__nav .btn-link.collapsed {
+    &:after {
+       transform: rotate(0deg);
+    }
+}
+
+.mobile-menu-nav-itm .collapse {
+     border-bottom: 1px solid $mobile-menu-nav-link-border-color;
+}
+
+
+.mobile-menu-nav-itm__list {
+    .dropdown-item {
+        color: $mobile-menu-nav-link-color;
+        padding: 0.875rem 1rem;
+        font-size: 0.875rem;
+    }
+}
+
+.mobile-menu__nav .dropdown-item {}
 
 .body-overlay {
     position: fixed;
